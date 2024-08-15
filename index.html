@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>survey-form</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">100xDevs Survey Form</h1>
+  <p id="description">Help us improve the platform by giving your few minutes</p>
+  <form id="survey-form">
+    <fieldset>
+    <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Enter your name" required/></label>
+    <label for="email" id="email-label">Email <input type="email" id="email" placeholder="Enter your email" required/></label>
+    <label for="number" id="number-label">Age <input type="number" id="number" placeholder="Age" required min="13" max="120"/></label>
+    </fieldset>
+    <fieldset>
+<label> Course you are part of
+<select id="dropdown">
+  <option value="">(select one)</option>
+  <option value="1">Web Development+DevOps</option>
+  <option value="2">Web3</option>
+  <option value="3">Both</option>
+</select>
+</label>
+<label>Describe your experience: <textarea></textarea></label>
+</fieldset>
+<fieldset>
+<legend>Would you recommend this Cohort to a friend</legend>
+<input type="radio" checked name="recommend" value="1" class="inline">Definetely
+<input type="radio" name="recommend" value="2" class="inline">Maybe
+<input type="radio" name="recommend" value="3" class="inline">Never
+</fieldset>
+<fieldset>
+<legend> What needs to be improved: </legend>
+  <input type="checkbox" class="inline"  value="frontend" name="topic"> Frontend Development <br>
+  <input type="checkbox" class="inline" value="backend" name="topic"> Backend Development <br>
+  <input type="checkbox" class="inline" value="devops" name="topic"> DevOps Basics<br>
+  <input type="checkbox" class="inline" value="opensource" name="topic"> Open Source(GSOC)<br>
+  <input type="checkbox" class="inline" value="wprojects" name="topic"> WebD Projects
+  <br>
+  <input type="checkbox" class="inline" value="web3d" name="topic"> Web3 Development
+  <br>
+  <input type="checkbox" class="inline" value="Rustsolidity" name="topic"> Rust/Solidity
+  <br>
+  <input type="checkbox" class="inline" value="smartc" name="topic"> Smart Contracts
+  <br>
+  <input type="checkbox" class="inline" value="web3projects" name="topic"> Web3 Projects
+</fieldset>
+<label>Any Comments or Suggestions:<textarea></textarea></label>
+
+<input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+  </html>
